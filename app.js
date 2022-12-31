@@ -3,13 +3,16 @@ const tipPercentage = document.querySelector('#tip-percentage');
 const showResult = document.querySelector('#show-result');
 const calculateBtn = document.querySelector('#calculate-btn');
 
+sum.focus();
+
 calculateBtn.addEventListener('click', () => {
     let sumValue = Number(sum.value);
     let tipPercentageValue = Number(tipPercentage.value);
 
-    console.log(sumValue, tipPercentageValue);
-
     calculateResult(sumValue, tipPercentageValue);
+    sum.value = '';
+    tipPercentage.value = '';
+    sum.focus();
 });
 
 const calculateResult = (sum, tipPercentage) => {
