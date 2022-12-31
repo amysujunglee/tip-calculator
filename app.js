@@ -9,11 +9,12 @@ sum.focus();
 calculateBtn.addEventListener('click', () => {
     let sumValue = Number(sum.value);
     let tipPercentageValue = Number(tipPercentage.value);
-    let people = Number(people.value);
+    let peopleValue = Number(people.value);
 
-    calculateResult(sumValue, tipPercentageValue);
+    calculateResult(sumValue, tipPercentageValue, peopleValue);
     sum.value = '';
     tipPercentage.value = '';
+    people.value = '';
     sum.focus();
 });
 
