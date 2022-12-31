@@ -19,8 +19,6 @@ const calculateResult = (sum, tipPercentage) => {
     let tip = sum * (tipPercentage / 100);
     let total = sum + tip;
 
-    console.log(typeof (tip));
-
     const newList = document.createElement('ul');
     newList.innerHTML = `
         <li>Sum before tip: $${sum}</li>
