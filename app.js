@@ -29,7 +29,7 @@ const calculateResult = (sum, tipPercentage, people) => {
         <li>Tip percentage: ${tipPercentage}%</li>
         <li>Tip: $${tip.toFixed(2)}</li>
         <li>Total: $${total.toFixed(2)}</li>
-        <li>Each person: $${divide}</li>
+        <li>Each person: $${divide.toFixed(2)}</li>
     `
     showResult.append(newList);
 }
