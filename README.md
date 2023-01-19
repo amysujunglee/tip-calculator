@@ -1,1 +1,4 @@
-# tip-calculator
+# Tip Calculator
+
+## Languages
+- JavaScript, HTML, CSS
